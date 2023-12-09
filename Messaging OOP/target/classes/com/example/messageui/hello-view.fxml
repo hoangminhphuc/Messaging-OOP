@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Pane prefHeight="450.0" prefWidth="262.0" style="-fx-border-color: #bebebe; -fx-border-width: 0.5;" stylesheets="@style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="3.0" layoutY="14.0" prefHeight="42.0" prefWidth="256.0">
+               <children>
+                  <TextField alignment="CENTER" layoutX="15.0" layoutY="4.0" prefHeight="33.0" prefWidth="222.0" promptText="Messages" stylesheets="@style.css">
+                     <styleClass>
+                        <String fx:value="radius" />
+                        <String fx:value="gray-background" />
+                     </styleClass>
+                     <font>
+                        <Font name="Google Sans Regular" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </TextField>
+                  <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="23.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+
+            <Button layoutX="14.0" layoutY="67.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="70.0" stylesheets="@style.css" text="All">
+               <styleClass>
+                  <String fx:value="add-button" />
+                  <String fx:value="gray-background" />
+               </styleClass>
+               <font>
+                  <Font name="Google Sans Regular" size="11.0" />
+               </font>
+            </Button>
+            <Button layoutX="92.0" layoutY="67.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="70.0" style="-fx-border-width: 0.5; -fx-border-color: #bebebe;" styleClass="unchecked-button" stylesheets="@style.css" text="Group">
+               <font>
+                  <Font name="Google Sans Regular" size="11.0" />
+               </font>
+
+            </Button>
+            <Button layoutX="168.0" layoutY="67.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="70.0" style="-fx-border-width: 0.5; -fx-border-color: #bebebe;" styleClass="unchecked-button" stylesheets="@style.css" text="Story">
+               <font>
+                  <Font name="Google Sans Regular" size="11.0" />
+               </font>
+
+            </Button>
+            <HBox alignment="CENTER_LEFT" layoutY="99.0" prefHeight="51.0" prefWidth="263.0">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/default.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="149.0">
+                     <children>
+                        <Label text="Sammy">
+                           <font>
+                              <Font name="Google Sans Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="14.0" prefWidth="114.0" text="Are you going to the meeting tonight? Its gonna be great">
+                           <font>
+                              <Font name="Google Sans Bold" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="56.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="34.0" text="20:03" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Google Sans Bold" size="11.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="DODGERBLUE" radius="5.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                           <HBox.margin>
+                              <Insets left="5.0" right="10.0" />
+                           </HBox.margin>
+                        </Circle>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutY="150.0" prefHeight="51.0" prefWidth="262.0" styleClass="gray-background" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/anna.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="149.0">
+                     <children>
+                        <Label text="Anna">
+                           <font>
+                              <Font name="Google Sans Medium" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="14.0" prefWidth="114.0" text="You: Its fine">
+                           <font>
+                              <Font name="Google Sans Medium" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="56.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="34.0" text="17:10" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Google Sans Medium" size="10.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" layoutY="200.0" prefHeight="51.0" prefWidth="263.0">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/girl2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="149.0">
+                     <children>
+                        <Label text="Jane">
+                           <font>
+                              <Font name="Google Sans Medium" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="14.0" prefWidth="114.0" text="You: Good for you bro">
+                           <font>
+                              <Font name="Google Sans Medium" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="56.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="16.0" prefWidth="34.0" text="13/11" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Google Sans Medium" size="10.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <VBox prefHeight="450.0" prefWidth="537.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="75.0" prefWidth="538.0" style="-fx-border-color: #bebebe; -fx-border-width: 0.2;" stylesheets="@style.css">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/anna.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="178.0">
+                     <children>
+                        <Label text="Anna Grim">
+                           <font>
+                              <Font name="Google Sans Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Active now">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="75.0" prefWidth="302.0">
+                     <children>
+                        <Button mnemonicParsing="false" styleClass="transparent" stylesheets="@style.css">
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/call.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+
+                        <Button layoutX="279.0" layoutY="35.0" mnemonicParsing="false" styleClass="transparent" stylesheets="@style.css">
+                           <graphic>
+                              <ImageView fitHeight="17.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons/more.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <ScrollPane prefHeight="324.0" prefWidth="538.0" styleClass="transparent" stylesheets="@style.css">
+               <content>
+                  <Pane prefHeight="319.0" prefWidth="535.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="256.0" layoutY="170.0" text="17:10" textAlignment="CENTER">
+                           <font>
+                              <Font name="Google Sans Bold" size="8.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="14.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/anna.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="51.0" layoutY="206.0" prefHeight="31.0" prefWidth="205.0" styleClass="bubble-chat-opponent" stylesheets="@style.css" text="Are u gonna go to school or not ?">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <font>
+                              <Font name="Google Sans Regular" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="51.0" layoutY="246.0" prefHeight="31.0" prefWidth="185.0" styleClass="bubble-chat-opponent" stylesheets="@style.css" text="20 minutes in and u not here">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <font>
+                              <Font name="Google Sans Regular" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="396.0" layoutY="274.0" prefHeight="31.0" prefWidth="110.0" styleClass="bubble-chat-self" stylesheets="@style.css" text="Uh no? Why ask?" textFill="WHITE">
+                           <padding>
+                              <Insets bottom="2.0" right="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="Google Sans Regular" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="538.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="0.0" styleClass="transparent" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="9.0" styleClass="transparent" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/photo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="55.0" layoutY="16.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="9.0" styleClass="transparent" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/mood.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="89.0" layoutY="16.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="9.0" styleClass="transparent" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/mic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="39.0" prefWidth="467.0">
+                     <children>
+                        <TextField layoutX="8.0" layoutY="7.0" prefHeight="25.0" prefWidth="352.0" promptText="Send message" stylesheets="@style.css">
+                           <styleClass>
+                              <String fx:value="radius" />
+                              <String fx:value="gray-background" />
+                           </styleClass>
+                           <font>
+                              <Font name="Google Sans Regular" size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </TextField>
+                        <Button layoutX="363.0" layoutY="7.0" mnemonicParsing="false" styleClass="transparent" stylesheets="@style.css" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

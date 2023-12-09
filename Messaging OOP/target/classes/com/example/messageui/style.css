@@ -1,0 +1,47 @@
+.radius {
+    -fx-background-radius: 100px;
+}
+.gray-background {
+    -fx-background-color: #e9e9e9;
+}
+.new-button {
+    -fx-padding:0;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-color: #f8f8f8;
+    -fx-border: none;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(three-pass-box, #718093, 2, 0, 0, 1) ;
+}
+.add-button {
+    -fx-padding:0;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border: none;
+    -fx-background-insets: 0;
+
+}
+.unchecked-button {
+    -fx-padding:0;
+    -fx-background-radius: 5;
+    -fx-background-color: #f8f8f8;
+    -fx-border-radius: 5;
+    -fx-border-width: 0.5 0.5 0.5 0.5;
+    -fx-border: none;
+    -fx-background-insets: 0;
+
+}
+.transparent {
+    -fx-background-color: rgba(0,0,0,0);
+}
+.bubble-chat-opponent {
+     -fx-background-radius: 100px;
+     -fx-background-color: #e9e9e9;
+}
+.bubble-chat-self {
+    -fx-background-radius: 100px;
+    -fx-background-color: #0260d1;
+}
+.bottom-dropshadow {
+     -fx-border-width: 0.5 0.5 0.5 0.5;
+}
